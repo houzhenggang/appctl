@@ -14,7 +14,7 @@
 
 AC_PREREQ(2.63)
 AC_INIT(openvswitch, 2.5.90, bugs@openvswitch.org)
-AC_CONFIG_SRCDIR([datapath/datapath.c])
+#AC_CONFIG_SRCDIR([datapath/datapath.c])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_HEADERS([config.h])
