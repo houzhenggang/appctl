@@ -136,12 +136,8 @@ OVS_CHECK_INCLUDE_NEXT([stdio.h string.h])
 AC_CONFIG_FILES([
     lib/stdio.h
     lib/string.h
-#    ovsdb/libovsdb.sym
-#    ofproto/libofproto.sym
     lib/libsflow.sym
-    lib/libopenvswitch.sym
-#    ovn/lib/libovn.sym
-#    vtep/libvtep.sym])
+    lib/libopenvswitch.sym])
 
 OVS_ENABLE_OPTION([-Wall])
 OVS_ENABLE_OPTION([-Wextra])
