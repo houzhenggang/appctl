@@ -177,17 +177,6 @@ lib_libopenvswitch_la_SOURCES = \
 	lib/ovs-router.c \
 	lib/ovs-thread.c \
 	lib/ovs-thread.h \
-	lib/ovsdb-data.c \
-	lib/ovsdb-data.h \
-	lib/ovsdb-error.c \
-	lib/ovsdb-error.h \
-	lib/ovsdb-idl-provider.h \
-	lib/ovsdb-idl.c \
-	lib/ovsdb-idl.h \
-	lib/ovsdb-parser.c \
-	lib/ovsdb-parser.h \
-	lib/ovsdb-types.c \
-	lib/ovsdb-types.h \
 	lib/packets.c \
 	lib/packets.h \
 	lib/pcap-file.c \
@@ -209,11 +198,6 @@ lib_libopenvswitch_la_SOURCES = \
 	lib/rculist.h \
 	lib/reconnect.c \
 	lib/reconnect.h \
-	lib/rstp.c \
-	lib/rstp.h \
-	lib/rstp-common.h \
-	lib/rstp-state-machines.c \
-	lib/rstp-state-machines.h \
 	lib/sat-math.h \
 	lib/seq.c \
 	lib/seq.h \
@@ -314,9 +298,9 @@ EXTRA_DIST += \
 	lib/string.h.in
 
 nodist_lib_libopenvswitch_la_SOURCES = \
-	lib/dirs.c \
-	lib/vswitch-idl.c \
-	lib/vswitch-idl.h
+	lib/dirs.c
+#	lib/vswitch-idl.c \
+#	lib/vswitch-idl.h
 CLEANFILES += $(nodist_lib_libopenvswitch_la_SOURCES)
 
 lib_LTLIBRARIES += lib/libsflow.la
@@ -457,11 +441,11 @@ MAN_FRAGMENTS += \
 	lib/vlog.man
 
 # vswitch IDL
-OVSIDL_BUILT += lib/vswitch-idl.c lib/vswitch-idl.h lib/vswitch-idl.ovsidl
+#OVSIDL_BUILT += lib/vswitch-idl.c lib/vswitch-idl.h lib/vswitch-idl.ovsidl
 
-EXTRA_DIST += lib/vswitch-idl.ann
-lib/vswitch-idl.ovsidl: vswitchd/vswitch.ovsschema lib/vswitch-idl.ann
-	$(AM_V_GEN)$(OVSDB_IDLC) annotate $(srcdir)/vswitchd/vswitch.ovsschema $(srcdir)/lib/vswitch-idl.ann > $@.tmp && mv $@.tmp $@
+#EXTRA_DIST += lib/vswitch-idl.ann
+#lib/vswitch-idl.ovsidl: vswitchd/vswitch.ovsschema lib/vswitch-idl.ann
+#	$(AM_V_GEN)$(OVSDB_IDLC) annotate $(srcdir)/vswitchd/vswitch.ovsschema $(srcdir)/lib/vswitch-idl.ann > $@.tmp && mv $@.tmp $@
 
 lib/dirs.c: lib/dirs.c.in Makefile
 	$(AM_V_GEN)($(ro_c) && sed < $(srcdir)/lib/dirs.c.in \

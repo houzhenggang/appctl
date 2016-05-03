@@ -21,8 +21,6 @@
 # notice and this notice are preserved.  This file is offered as-is,
 # without warranty of any kind.
 
-# Generated automatically -- do not modify!    -*- buffer-read-only: t -*-
-
 # Copyright (C) 2013 Nicira, Inc.
 #
 # Copying and distribution of this file, with or without modification,
@@ -36,8 +34,6 @@
 # are permitted in any medium without royalty provided the copyright
 # notice and this notice are preserved.  This file is offered as-is,
 # without warranty of any kind.
-
-# BUILT_SOURCES += include/odp-netlink.h
 
 
 
@@ -357,41 +353,36 @@ am__lib_libopenvswitch_la_SOURCES_DIST = lib/aes128.c lib/aes128.h \
 	lib/ovs-atomic-x86_64.h lib/ovs-atomic.h lib/ovs-lldp.c \
 	lib/ovs-lldp.h lib/ovs-rcu.c lib/ovs-rcu.h lib/ovs-router.h \
 	lib/ovs-router.c lib/ovs-thread.c lib/ovs-thread.h \
-	lib/ovsdb-data.c lib/ovsdb-data.h lib/ovsdb-error.c \
-	lib/ovsdb-error.h lib/ovsdb-idl-provider.h lib/ovsdb-idl.c \
-	lib/ovsdb-idl.h lib/ovsdb-parser.c lib/ovsdb-parser.h \
-	lib/ovsdb-types.c lib/ovsdb-types.h lib/packets.c \
-	lib/packets.h lib/pcap-file.c lib/pcap-file.h \
+	lib/packets.c lib/packets.h lib/pcap-file.c lib/pcap-file.h \
 	lib/perf-counter.h lib/perf-counter.c lib/pktbuf.c \
 	lib/pktbuf.h lib/poll-loop.c lib/poll-loop.h lib/process.c \
 	lib/process.h lib/pvector.c lib/pvector.h lib/random.c \
 	lib/random.h lib/rconn.c lib/rconn.h lib/rculist.h \
-	lib/reconnect.c lib/reconnect.h lib/rstp.c lib/rstp.h \
-	lib/rstp-common.h lib/rstp-state-machines.c \
-	lib/rstp-state-machines.h lib/sat-math.h lib/seq.c lib/seq.h \
-	lib/sha1.c lib/sha1.h lib/shash.c lib/shash.h lib/simap.c \
-	lib/simap.h lib/smap.c lib/smap.h lib/socket-util.c \
-	lib/socket-util.h lib/sort.c lib/sort.h lib/sset.c lib/sset.h \
-	lib/stp.c lib/stp.h lib/stream-fd.c lib/stream-fd.h \
-	lib/stream-provider.h lib/stream-ssl.h lib/stream-tcp.c \
-	lib/stream.c lib/stream.h lib/stdio.c lib/string.c lib/svec.c \
-	lib/svec.h lib/syslog-direct.c lib/syslog-direct.h \
-	lib/syslog-libc.c lib/syslog-libc.h lib/syslog-provider.h \
-	lib/table.c lib/table.h lib/timer.c lib/timer.h lib/timeval.c \
-	lib/timeval.h lib/tnl-neigh-cache.c lib/tnl-neigh-cache.h \
-	lib/tnl-ports.c lib/tnl-ports.h lib/token-bucket.c \
-	lib/tun-metadata.c lib/tun-metadata.h lib/type-props.h \
-	lib/unaligned.h lib/unicode.c lib/unicode.h lib/unixctl.c \
-	lib/unixctl.h lib/util.c lib/util.h lib/uuid.c lib/uuid.h \
-	lib/valgrind.h lib/vconn-provider.h lib/vconn-stream.c \
-	lib/vconn.c lib/vlan-bitmap.c lib/vlan-bitmap.h lib/vlandev.c \
-	lib/vlandev.h lib/vlog.c lib/lldp/aa-structs.h lib/lldp/lldp.c \
-	lib/lldp/lldp-const.h lib/lldp/lldp-tlv.h lib/lldp/lldpd.c \
-	lib/lldp/lldpd.h lib/lldp/lldpd-structs.c \
-	lib/lldp/lldpd-structs.h lib/daemon-windows.c \
-	lib/getopt_long.c lib/getrusage-windows.c lib/latch-windows.c \
-	lib/route-table-stub.c lib/if-notifier-stub.c lib/strsep.c \
-	lib/daemon-unix.c lib/latch-unix.c lib/signals.c lib/signals.h \
+	lib/reconnect.c lib/reconnect.h lib/sat-math.h lib/seq.c \
+	lib/seq.h lib/sha1.c lib/sha1.h lib/shash.c lib/shash.h \
+	lib/simap.c lib/simap.h lib/smap.c lib/smap.h \
+	lib/socket-util.c lib/socket-util.h lib/sort.c lib/sort.h \
+	lib/sset.c lib/sset.h lib/stp.c lib/stp.h lib/stream-fd.c \
+	lib/stream-fd.h lib/stream-provider.h lib/stream-ssl.h \
+	lib/stream-tcp.c lib/stream.c lib/stream.h lib/stdio.c \
+	lib/string.c lib/svec.c lib/svec.h lib/syslog-direct.c \
+	lib/syslog-direct.h lib/syslog-libc.c lib/syslog-libc.h \
+	lib/syslog-provider.h lib/table.c lib/table.h lib/timer.c \
+	lib/timer.h lib/timeval.c lib/timeval.h lib/tnl-neigh-cache.c \
+	lib/tnl-neigh-cache.h lib/tnl-ports.c lib/tnl-ports.h \
+	lib/token-bucket.c lib/tun-metadata.c lib/tun-metadata.h \
+	lib/type-props.h lib/unaligned.h lib/unicode.c lib/unicode.h \
+	lib/unixctl.c lib/unixctl.h lib/util.c lib/util.h lib/uuid.c \
+	lib/uuid.h lib/valgrind.h lib/vconn-provider.h \
+	lib/vconn-stream.c lib/vconn.c lib/vlan-bitmap.c \
+	lib/vlan-bitmap.h lib/vlandev.c lib/vlandev.h lib/vlog.c \
+	lib/lldp/aa-structs.h lib/lldp/lldp.c lib/lldp/lldp-const.h \
+	lib/lldp/lldp-tlv.h lib/lldp/lldpd.c lib/lldp/lldpd.h \
+	lib/lldp/lldpd-structs.c lib/lldp/lldpd-structs.h \
+	lib/daemon-windows.c lib/getopt_long.c lib/getrusage-windows.c \
+	lib/latch-windows.c lib/route-table-stub.c \
+	lib/if-notifier-stub.c lib/strsep.c lib/daemon-unix.c \
+	lib/latch-unix.c lib/signals.c lib/signals.h \
 	lib/socket-util-unix.c lib/stream-unix.c lib/dpif-netlink.c \
 	lib/dpif-netlink.h lib/if-notifier.c lib/if-notifier.h \
 	lib/netdev-linux.c lib/netdev-linux.h lib/netlink-conntrack.c \
@@ -450,12 +441,10 @@ am_lib_libopenvswitch_la_OBJECTS = lib/aes128.lo lib/backtrace.lo \
 	lib/ofp-print.lo lib/ofp-prop.lo lib/ofp-util.lo \
 	lib/ofp-version-opt.lo lib/ofpbuf.lo lib/ovs-atomic-locked.lo \
 	lib/ovs-lldp.lo lib/ovs-rcu.lo lib/ovs-router.lo \
-	lib/ovs-thread.lo lib/ovsdb-data.lo lib/ovsdb-error.lo \
-	lib/ovsdb-idl.lo lib/ovsdb-parser.lo lib/ovsdb-types.lo \
-	lib/packets.lo lib/pcap-file.lo lib/perf-counter.lo \
-	lib/pktbuf.lo lib/poll-loop.lo lib/process.lo lib/pvector.lo \
-	lib/random.lo lib/rconn.lo lib/reconnect.lo lib/rstp.lo \
-	lib/rstp-state-machines.lo lib/seq.lo lib/sha1.lo lib/shash.lo \
+	lib/ovs-thread.lo lib/packets.lo lib/pcap-file.lo \
+	lib/perf-counter.lo lib/pktbuf.lo lib/poll-loop.lo \
+	lib/process.lo lib/pvector.lo lib/random.lo lib/rconn.lo \
+	lib/reconnect.lo lib/seq.lo lib/sha1.lo lib/shash.lo \
 	lib/simap.lo lib/smap.lo lib/socket-util.lo lib/sort.lo \
 	lib/sset.lo lib/stp.lo lib/stream-fd.lo lib/stream-tcp.lo \
 	lib/stream.lo lib/stdio.lo lib/string.lo lib/svec.lo \
@@ -470,8 +459,7 @@ am_lib_libopenvswitch_la_OBJECTS = lib/aes128.lo lib/backtrace.lo \
 	$(am__objects_6) $(am__objects_7) $(am__objects_8) \
 	$(am__objects_9) $(am__objects_10) $(am__objects_11)
 @HAVE_OPENSSL_TRUE@am__objects_12 = lib/dhparams.lo
-nodist_lib_libopenvswitch_la_OBJECTS = lib/dirs.lo lib/vswitch-idl.lo \
-	$(am__objects_12)
+nodist_lib_libopenvswitch_la_OBJECTS = lib/dirs.lo $(am__objects_12)
 lib_libopenvswitch_la_OBJECTS = $(am_lib_libopenvswitch_la_OBJECTS) \
 	$(nodist_lib_libopenvswitch_la_OBJECTS)
 AM_V_lt = $(am__v_lt_@AM_V@)
@@ -578,6 +566,14 @@ DIST_SOURCES = $(am__lib_libopenvswitch_la_SOURCES_DIST) \
 	$(utilities_ovs_testcontroller_SOURCES) \
 	$(am__utilities_ovs_vlan_bug_workaround_SOURCES_DIST) \
 	$(utilities_ovs_vsctl_SOURCES)
+RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \
+	ctags-recursive dvi-recursive html-recursive info-recursive \
+	install-data-recursive install-dvi-recursive \
+	install-exec-recursive install-html-recursive \
+	install-info-recursive install-pdf-recursive \
+	install-ps-recursive install-recursive installcheck-recursive \
+	installdirs-recursive pdf-recursive ps-recursive \
+	tags-recursive uninstall-recursive
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -625,11 +621,10 @@ am__noinst_HEADERS_DIST = CONTRIBUTING.md CodingStyle.md DESIGN.md \
 	build-aux/thread-safety-blacklist m4/absolute-header.m4 \
 	m4/include_next.m4 lib/stdio.h.in lib/string.h.in \
 	lib/dh1024.pem lib/dh2048.pem lib/dh4096.pem lib/dirs.c.in \
-	lib/db-ctl-base.xml lib/vswitch-idl.ann \
-	build-aux/extract-ofp-fields build-aux/extract-ofp-actions \
-	build-aux/extract-ofp-errors build-aux/extract-ofp-msgs \
-	utilities/ovs-sim.in utilities/ovs-sim.1.xml \
-	utilities/ovs-appctl-bashcomp.bash \
+	lib/db-ctl-base.xml build-aux/extract-ofp-fields \
+	build-aux/extract-ofp-actions build-aux/extract-ofp-errors \
+	build-aux/extract-ofp-msgs utilities/ovs-sim.in \
+	utilities/ovs-sim.1.xml utilities/ovs-appctl-bashcomp.bash \
 	utilities/ovs-check-dead-ifs.in utilities/ovs-ctl.in \
 	utilities/ovs-dev.py utilities/ovs-docker \
 	utilities/ovs-dpctl-top.in utilities/ovs-l3ping.in \
@@ -660,8 +655,17 @@ am__noinst_HEADERS_DIST = CONTRIBUTING.md CodingStyle.md DESIGN.md \
 	utilities/bugtool/ovs-bugtool-ovs-appctl-dpif \
 	utilities/bugtool/ovs-bugtool-bond-show \
 	utilities/bugtool/ovs-bugtool-conntrack-dump \
-	utilities/bugtool/ovs-bugtool.in
+	utilities/bugtool/ovs-bugtool.in \
+	build-aux/extract-odp-netlink-h
 HEADERS = $(noinst_HEADERS) $(openvswitchinclude_HEADERS)
+RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\
+  distclean-recursive maintainer-clean-recursive
+am__recursive_targets = \
+  $(RECURSIVE_TARGETS) \
+  $(RECURSIVE_CLEAN_TARGETS) \
+  $(am__extra_recursive_targets)
+AM_RECURSIVE_TARGETS = $(am__recursive_targets:-recursive=) TAGS CTAGS \
+	cscope distdir dist dist-all distcheck
 am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) \
 	$(LISP)config.h.in
 # Read a list of newline-separated strings from the standard input,
@@ -683,7 +687,7 @@ am__define_uniq_tagged_files = \
 ETAGS = etags
 CTAGS = ctags
 CSCOPE = cscope
-AM_RECURSIVE_TARGETS = cscope
+DIST_SUBDIRS = $(SUBDIRS)
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 distdir = $(PACKAGE)-$(VERSION)
 top_distdir = $(distdir)
@@ -694,6 +698,31 @@ am__remove_distdir = \
       || { sleep 5 && rm -rf "$(distdir)"; }; \
   else :; fi
 am__post_remove_distdir = $(am__remove_distdir)
+am__relativize = \
+  dir0=`pwd`; \
+  sed_first='s,^\([^/]*\)/.*$$,\1,'; \
+  sed_rest='s,^[^/]*/*,,'; \
+  sed_last='s,^.*/\([^/]*\)$$,\1,'; \
+  sed_butlast='s,/*[^/]*$$,,'; \
+  while test -n "$$dir1"; do \
+    first=`echo "$$dir1" | sed -e "$$sed_first"`; \
+    if test "$$first" != "."; then \
+      if test "$$first" = ".."; then \
+        dir2=`echo "$$dir0" | sed -e "$$sed_last"`/"$$dir2"; \
+        dir0=`echo "$$dir0" | sed -e "$$sed_butlast"`; \
+      else \
+        first2=`echo "$$dir2" | sed -e "$$sed_first"`; \
+        if test "$$first2" = "$$first"; then \
+          dir2=`echo "$$dir2" | sed -e "$$sed_rest"`; \
+        else \
+          dir2="../$$dir2"; \
+        fi; \
+        dir0="$$dir0"/"$$first"; \
+      fi; \
+    fi; \
+    dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
+  done; \
+  reldir="$$dir2"
 DIST_ARCHIVES = $(distdir).tar.gz
 GZIP_ENV = --best
 DIST_TARGETS = dist-gzip
@@ -863,7 +892,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 AUTOMAKE_OPTIONS = foreign subdir-objects
 ACLOCAL_AMFLAGS = -I m4
-#SUBDIRS = datapath
+SUBDIRS = datapath
 AM_CPPFLAGS = $(SSL_CFLAGS) $(am__append_1) -I $(top_srcdir)/include \
 	-I $(top_builddir)/include -I $(top_srcdir)/lib -I \
 	$(top_builddir)/lib $(SSL_INCLUDES) $(am__append_4)
@@ -897,12 +926,14 @@ run_python = \
 ALL_LOCAL = $(am__append_6) config-h-check printf-check static-check \
 	check-assert-h-usage check-endian thread-safety-check \
 	$(am__append_8) $(am__append_10) $(am__append_11)
-BUILT_SOURCES = 
+BUILT_SOURCES = include/odp-netlink.h
+#	lib/vswitch-idl.c \
+#	lib/vswitch-idl.h
 CLEANFILES = $(am__append_7) $(am__append_9) flake8-check \
 	manpage-dep-check $(nodist_lib_libopenvswitch_la_SOURCES) \
 	lib/meta-flow.inc lib/nx-match.inc lib/ofp-actions.inc1 \
 	lib/ofp-actions.inc2 lib/ofp-errors.inc lib/ofp-msgs.inc \
-	$(am__append_32)
+	$(am__append_32) include/odp-netlink.h
 CLEAN_LOCAL = clean-pycov $(am__append_12)
 DISTCLEANFILES = utilities/ovs-appctl.8 utilities/ovs-ctl \
 	utilities/ovs-check-dead-ifs utilities/ovs-testcontroller.8 \
@@ -938,11 +969,10 @@ EXTRA_DIST = $(docs) NOTICE .travis.yml .travis/linux-build.sh \
 	build-aux/thread-safety-blacklist m4/absolute-header.m4 \
 	m4/include_next.m4 lib/stdio.h.in lib/string.h.in \
 	lib/dh1024.pem lib/dh2048.pem lib/dh4096.pem lib/dirs.c.in \
-	lib/db-ctl-base.xml lib/vswitch-idl.ann \
-	build-aux/extract-ofp-fields build-aux/extract-ofp-actions \
-	build-aux/extract-ofp-errors build-aux/extract-ofp-msgs \
-	utilities/ovs-sim.in utilities/ovs-sim.1.xml \
-	utilities/ovs-appctl-bashcomp.bash \
+	lib/db-ctl-base.xml build-aux/extract-ofp-fields \
+	build-aux/extract-ofp-actions build-aux/extract-ofp-errors \
+	build-aux/extract-ofp-msgs utilities/ovs-sim.in \
+	utilities/ovs-sim.1.xml utilities/ovs-appctl-bashcomp.bash \
 	utilities/ovs-check-dead-ifs.in \
 	utilities/ovs-command-bashcomp.INSTALL.md utilities/ovs-ctl.in \
 	utilities/ovs-dev.py utilities/ovs-docker \
@@ -953,7 +983,8 @@ EXTRA_DIST = $(docs) NOTICE .travis.yml .travis/linux-build.sh \
 	utilities/ovs-tcpundump.in utilities/ovs-test.in \
 	utilities/ovs-vlan-test.in utilities/ovs-vsctl-bashcomp.bash \
 	utilities/qemu-wrap.py $(bugtool_plugins) $(bugtool_scripts) \
-	utilities/bugtool/ovs-bugtool.in
+	utilities/bugtool/ovs-bugtool.in \
+	build-aux/extract-odp-netlink-h
 bin_SCRIPTS = utilities/ovs-docker utilities/ovs-pki $(am__append_28)
 DIST_HOOKS = 
 dist_man_MANS = 
@@ -1002,10 +1033,7 @@ noinst_HEADERS = $(EXTRA_DIST)
 lib_LTLIBRARIES = lib/libopenvswitch.la lib/libsflow.la
 noinst_man_MANS = utilities/ovs-sim.1
 noinst_SCRIPTS = utilities/ovs-sim
-
-# vswitch IDL
-OVSIDL_BUILT = lib/vswitch-idl.c lib/vswitch-idl.h \
-	lib/vswitch-idl.ovsidl
+OVSIDL_BUILT = 
 pkgdata_DATA = 
 sbin_SCRIPTS = $(am__append_31)
 scripts_SCRIPTS = utilities/ovs-check-dead-ifs utilities/ovs-ctl \
@@ -1077,43 +1105,37 @@ lib_libopenvswitch_la_SOURCES = lib/aes128.c lib/aes128.h \
 	lib/ovs-atomic-x86_64.h lib/ovs-atomic.h lib/ovs-lldp.c \
 	lib/ovs-lldp.h lib/ovs-rcu.c lib/ovs-rcu.h lib/ovs-router.h \
 	lib/ovs-router.c lib/ovs-thread.c lib/ovs-thread.h \
-	lib/ovsdb-data.c lib/ovsdb-data.h lib/ovsdb-error.c \
-	lib/ovsdb-error.h lib/ovsdb-idl-provider.h lib/ovsdb-idl.c \
-	lib/ovsdb-idl.h lib/ovsdb-parser.c lib/ovsdb-parser.h \
-	lib/ovsdb-types.c lib/ovsdb-types.h lib/packets.c \
-	lib/packets.h lib/pcap-file.c lib/pcap-file.h \
+	lib/packets.c lib/packets.h lib/pcap-file.c lib/pcap-file.h \
 	lib/perf-counter.h lib/perf-counter.c lib/pktbuf.c \
 	lib/pktbuf.h lib/poll-loop.c lib/poll-loop.h lib/process.c \
 	lib/process.h lib/pvector.c lib/pvector.h lib/random.c \
 	lib/random.h lib/rconn.c lib/rconn.h lib/rculist.h \
-	lib/reconnect.c lib/reconnect.h lib/rstp.c lib/rstp.h \
-	lib/rstp-common.h lib/rstp-state-machines.c \
-	lib/rstp-state-machines.h lib/sat-math.h lib/seq.c lib/seq.h \
-	lib/sha1.c lib/sha1.h lib/shash.c lib/shash.h lib/simap.c \
-	lib/simap.h lib/smap.c lib/smap.h lib/socket-util.c \
-	lib/socket-util.h lib/sort.c lib/sort.h lib/sset.c lib/sset.h \
-	lib/stp.c lib/stp.h lib/stream-fd.c lib/stream-fd.h \
-	lib/stream-provider.h lib/stream-ssl.h lib/stream-tcp.c \
-	lib/stream.c lib/stream.h lib/stdio.c lib/string.c lib/svec.c \
-	lib/svec.h lib/syslog-direct.c lib/syslog-direct.h \
-	lib/syslog-libc.c lib/syslog-libc.h lib/syslog-provider.h \
-	lib/table.c lib/table.h lib/timer.c lib/timer.h lib/timeval.c \
-	lib/timeval.h lib/tnl-neigh-cache.c lib/tnl-neigh-cache.h \
-	lib/tnl-ports.c lib/tnl-ports.h lib/token-bucket.c \
-	lib/tun-metadata.c lib/tun-metadata.h lib/type-props.h \
-	lib/unaligned.h lib/unicode.c lib/unicode.h lib/unixctl.c \
-	lib/unixctl.h lib/util.c lib/util.h lib/uuid.c lib/uuid.h \
-	lib/valgrind.h lib/vconn-provider.h lib/vconn-stream.c \
-	lib/vconn.c lib/vlan-bitmap.c lib/vlan-bitmap.h lib/vlandev.c \
-	lib/vlandev.h lib/vlog.c lib/lldp/aa-structs.h lib/lldp/lldp.c \
-	lib/lldp/lldp-const.h lib/lldp/lldp-tlv.h lib/lldp/lldpd.c \
-	lib/lldp/lldpd.h lib/lldp/lldpd-structs.c \
-	lib/lldp/lldpd-structs.h $(am__append_14) $(am__append_15) \
-	$(am__append_18) $(am__append_19) $(am__append_20) \
-	$(am__append_21) $(am__append_22) $(am__append_23) \
-	$(am__append_24) $(am__append_25) $(am__append_27)
-nodist_lib_libopenvswitch_la_SOURCES = lib/dirs.c lib/vswitch-idl.c \
-	lib/vswitch-idl.h $(am__append_26)
+	lib/reconnect.c lib/reconnect.h lib/sat-math.h lib/seq.c \
+	lib/seq.h lib/sha1.c lib/sha1.h lib/shash.c lib/shash.h \
+	lib/simap.c lib/simap.h lib/smap.c lib/smap.h \
+	lib/socket-util.c lib/socket-util.h lib/sort.c lib/sort.h \
+	lib/sset.c lib/sset.h lib/stp.c lib/stp.h lib/stream-fd.c \
+	lib/stream-fd.h lib/stream-provider.h lib/stream-ssl.h \
+	lib/stream-tcp.c lib/stream.c lib/stream.h lib/stdio.c \
+	lib/string.c lib/svec.c lib/svec.h lib/syslog-direct.c \
+	lib/syslog-direct.h lib/syslog-libc.c lib/syslog-libc.h \
+	lib/syslog-provider.h lib/table.c lib/table.h lib/timer.c \
+	lib/timer.h lib/timeval.c lib/timeval.h lib/tnl-neigh-cache.c \
+	lib/tnl-neigh-cache.h lib/tnl-ports.c lib/tnl-ports.h \
+	lib/token-bucket.c lib/tun-metadata.c lib/tun-metadata.h \
+	lib/type-props.h lib/unaligned.h lib/unicode.c lib/unicode.h \
+	lib/unixctl.c lib/unixctl.h lib/util.c lib/util.h lib/uuid.c \
+	lib/uuid.h lib/valgrind.h lib/vconn-provider.h \
+	lib/vconn-stream.c lib/vconn.c lib/vlan-bitmap.c \
+	lib/vlan-bitmap.h lib/vlandev.c lib/vlandev.h lib/vlog.c \
+	lib/lldp/aa-structs.h lib/lldp/lldp.c lib/lldp/lldp-const.h \
+	lib/lldp/lldp-tlv.h lib/lldp/lldpd.c lib/lldp/lldpd.h \
+	lib/lldp/lldpd-structs.c lib/lldp/lldpd-structs.h \
+	$(am__append_14) $(am__append_15) $(am__append_18) \
+	$(am__append_19) $(am__append_20) $(am__append_21) \
+	$(am__append_22) $(am__append_23) $(am__append_24) \
+	$(am__append_25) $(am__append_27)
+nodist_lib_libopenvswitch_la_SOURCES = lib/dirs.c $(am__append_26)
 lib_libsflow_la_LDFLAGS = \
         -version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE) \
         -Wl,--version-script=$(top_builddir)/lib/libsflow.sym \
@@ -1189,7 +1211,7 @@ openvswitchinclude_HEADERS = \
 	include/openvswitch/vlog.h
 
 all: $(BUILT_SOURCES) config.h
-	$(MAKE) $(AM_MAKEFLAGS) all-am
+	$(MAKE) $(AM_MAKEFLAGS) all-recursive
 
 .SUFFIXES:
 .SUFFIXES: .in .xml .c .lo .o .obj
@@ -1371,11 +1393,6 @@ lib/ovs-lldp.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/ovs-rcu.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/ovs-router.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/ovs-thread.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
-lib/ovsdb-data.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
-lib/ovsdb-error.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
-lib/ovsdb-idl.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
-lib/ovsdb-parser.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
-lib/ovsdb-types.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/packets.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/pcap-file.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/perf-counter.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
@@ -1386,9 +1403,6 @@ lib/pvector.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/random.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/rconn.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/reconnect.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
-lib/rstp.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
-lib/rstp-state-machines.lo: lib/$(am__dirstamp) \
-	lib/$(DEPDIR)/$(am__dirstamp)
 lib/seq.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/sha1.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/shash.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
@@ -1482,7 +1496,6 @@ lib/route-table-bsd.lo: lib/$(am__dirstamp) \
 lib/stream-ssl.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/stream-nossl.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/dirs.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
-lib/vswitch-idl.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 lib/dhparams.lo: lib/$(am__dirstamp) lib/$(DEPDIR)/$(am__dirstamp)
 
 lib/libopenvswitch.la: $(lib_libopenvswitch_la_OBJECTS) $(lib_libopenvswitch_la_DEPENDENCIES) $(EXTRA_lib_libopenvswitch_la_DEPENDENCIES) lib/$(am__dirstamp)
@@ -2004,11 +2017,6 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/ovs-rcu.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/ovs-router.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/ovs-thread.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/ovsdb-data.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/ovsdb-error.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/ovsdb-idl.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/ovsdb-parser.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/ovsdb-types.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/packets.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/pcap-file.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/perf-counter.Plo@am__quote@
@@ -2022,8 +2030,6 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/route-table-bsd.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/route-table-stub.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/route-table.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/rstp-state-machines.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/rstp.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/rtbsd.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/rtnetlink.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/seq.Plo@am__quote@
@@ -2065,7 +2071,6 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/vlan-bitmap.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/vlandev.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/vlog.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@lib/$(DEPDIR)/vswitch-idl.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/lldp/$(DEPDIR)/lldp.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/lldp/$(DEPDIR)/lldpd-structs.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@lib/lldp/$(DEPDIR)/lldpd.Plo@am__quote@
@@ -2353,14 +2358,61 @@ uninstall-openvswitchincludeHEADERS:
 	files=`for p in $$list; do echo $$p; done | sed -e 's|^.*/||'`; \
 	dir='$(DESTDIR)$(openvswitchincludedir)'; $(am__uninstall_files_from_dir)
 
+# This directory's subdirectories are mostly independent; you can cd
+# into them and run 'make' without going through this Makefile.
+# To change the values of 'make' variables: instead of editing Makefiles,
+# (1) if the variable is set in 'config.status', edit 'config.status'
+#     (which will cause the Makefiles to be regenerated when you run 'make');
+# (2) otherwise, pass the desired values on the 'make' command line.
+$(am__recursive_targets):
+	@fail=; \
+	if $(am__make_keepgoing); then \
+	  failcom='fail=yes'; \
+	else \
+	  failcom='exit 1'; \
+	fi; \
+	dot_seen=no; \
+	target=`echo $@ | sed s/-recursive//`; \
+	case "$@" in \
+	  distclean-* | maintainer-clean-*) list='$(DIST_SUBDIRS)' ;; \
+	  *) list='$(SUBDIRS)' ;; \
+	esac; \
+	for subdir in $$list; do \
+	  echo "Making $$target in $$subdir"; \
+	  if test "$$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$$target-am"; \
+	  else \
+	    local_target="$$target"; \
+	  fi; \
+	  ($(am__cd) $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
+	  || eval $$failcom; \
+	done; \
+	if test "$$dot_seen" = "no"; then \
+	  $(MAKE) $(AM_MAKEFLAGS) "$$target-am" || exit 1; \
+	fi; test -z "$$fail"
+
 ID: $(am__tagged_files)
 	$(am__define_uniq_tagged_files); mkid -fID $$unique
-tags: tags-am
+tags: tags-recursive
 TAGS: tags
 
 tags-am: $(TAGS_DEPENDENCIES) $(am__tagged_files)
 	set x; \
 	here=`pwd`; \
+	if ($(ETAGS) --etags-include --version) >/dev/null 2>&1; then \
+	  include_option=--etags-include; \
+	  empty_fix=.; \
+	else \
+	  include_option=--include; \
+	  empty_fix=; \
+	fi; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	  if test "$$subdir" = .; then :; else \
+	    test ! -f $$subdir/TAGS || \
+	      set "$$@" "$$include_option=$$here/$$subdir/TAGS"; \
+	  fi; \
+	done; \
 	$(am__define_uniq_tagged_files); \
 	shift; \
 	if test -z "$(ETAGS_ARGS)$$*$$unique"; then :; else \
@@ -2373,7 +2425,7 @@ tags-am: $(TAGS_DEPENDENCIES) $(am__tagged_files)
 	      $$unique; \
 	  fi; \
 	fi
-ctags: ctags-am
+ctags: ctags-recursive
 
 CTAGS: ctags
 ctags-am: $(TAGS_DEPENDENCIES) $(am__tagged_files)
@@ -2392,7 +2444,7 @@ cscope: cscope.files
 clean-cscope:
 	-rm -f cscope.files
 cscope.files: clean-cscope cscopelist
-cscopelist: cscopelist-am
+cscopelist: cscopelist-recursive
 
 cscopelist-am: $(am__tagged_files)
 	list='$(am__tagged_files)'; \
@@ -2442,6 +2494,31 @@ distdir: $(DISTFILES)
 	    test -f "$(distdir)/$$file" \
 	    || cp -p $$d/$$file "$(distdir)/$$file" \
 	    || exit 1; \
+	  fi; \
+	done
+	@list='$(DIST_SUBDIRS)'; for subdir in $$list; do \
+	  if test "$$subdir" = .; then :; else \
+	    $(am__make_dryrun) \
+	      || test -d "$(distdir)/$$subdir" \
+	      || $(MKDIR_P) "$(distdir)/$$subdir" \
+	      || exit 1; \
+	    dir1=$$subdir; dir2="$(distdir)/$$subdir"; \
+	    $(am__relativize); \
+	    new_distdir=$$reldir; \
+	    dir1=$$subdir; dir2="$(top_distdir)"; \
+	    $(am__relativize); \
+	    new_top_distdir=$$reldir; \
+	    echo " (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) top_distdir="$$new_top_distdir" distdir="$$new_distdir" \\"; \
+	    echo "     am__remove_distdir=: am__skip_length_check=: am__skip_mode_fix=: distdir)"; \
+	    ($(am__cd) $$subdir && \
+	      $(MAKE) $(AM_MAKEFLAGS) \
+	        top_distdir="$$new_top_distdir" \
+	        distdir="$$new_distdir" \
+		am__remove_distdir=: \
+		am__skip_length_check=: \
+		am__skip_mode_fix=: \
+	        distdir) \
+	      || exit 1; \
 	  fi; \
 	done
 	$(MAKE) $(AM_MAKEFLAGS) \
@@ -2581,25 +2658,26 @@ distcleancheck: distclean
 check-am: all-am
 	$(MAKE) $(AM_MAKEFLAGS) $(check_SCRIPTS) $(check_DATA)
 check: $(BUILT_SOURCES)
-	$(MAKE) $(AM_MAKEFLAGS) check-am
+	$(MAKE) $(AM_MAKEFLAGS) check-recursive
 all-am: Makefile $(LTLIBRARIES) $(PROGRAMS) $(SCRIPTS) $(MANS) $(DATA) \
 		$(HEADERS) config.h all-local
 install-binPROGRAMS: install-libLTLIBRARIES
 
-installdirs:
+installdirs: installdirs-recursive
+installdirs-am:
 	for dir in "$(DESTDIR)$(libdir)" "$(DESTDIR)$(bindir)" "$(DESTDIR)$(sbindir)" "$(DESTDIR)$(bindir)" "$(DESTDIR)$(completiondir)" "$(DESTDIR)$(pkgdatadir)" "$(DESTDIR)$(sbindir)" "$(DESTDIR)$(scriptsdir)" "$(DESTDIR)$(sbindir)" "$(DESTDIR)$(scriptsdir)" "$(DESTDIR)$(man1dir)" "$(DESTDIR)$(man8dir)" "$(DESTDIR)$(pkgdatadir)" "$(DESTDIR)$(scriptsdir)" "$(DESTDIR)$(pkgconfigdir)" "$(DESTDIR)$(pkgdatadir)" "$(DESTDIR)$(scriptsdir)" "$(DESTDIR)$(openvswitchincludedir)"; do \
 	  test -z "$$dir" || $(MKDIR_P) "$$dir"; \
 	done
 install: $(BUILT_SOURCES)
-	$(MAKE) $(AM_MAKEFLAGS) install-am
-install-exec: install-exec-am
-install-data: install-data-am
-uninstall: uninstall-am
+	$(MAKE) $(AM_MAKEFLAGS) install-recursive
+install-exec: install-exec-recursive
+install-data: install-data-recursive
+uninstall: uninstall-recursive
 
 install-am: all-am
 	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
 
-installcheck: installcheck-am
+installcheck: installcheck-recursive
 install-strip:
 	if test -z '$(STRIP)'; then \
 	  $(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \
@@ -2630,28 +2708,28 @@ maintainer-clean-generic:
 	@echo "This command is intended for maintainers to use"
 	@echo "it deletes files that may require special tools to rebuild."
 	-test -z "$(BUILT_SOURCES)" || rm -f $(BUILT_SOURCES)
-clean: clean-am
+clean: clean-recursive
 
 clean-am: clean-binPROGRAMS clean-generic clean-libLTLIBRARIES \
 	clean-libtool clean-local clean-noinstPROGRAMS \
 	clean-sbinPROGRAMS mostlyclean-am
 
-distclean: distclean-am
+distclean: distclean-recursive
 	-rm -f $(am__CONFIG_DISTCLEAN_FILES)
 	-rm -rf lib/$(DEPDIR) lib/lldp/$(DEPDIR) utilities/$(DEPDIR)
 	-rm -f Makefile
 distclean-am: clean-am distclean-compile distclean-generic \
 	distclean-hdr distclean-libtool distclean-tags
 
-dvi: dvi-am
+dvi: dvi-recursive
 
 dvi-am:
 
-html: html-am
+html: html-recursive
 
 html-am:
 
-info: info-am
+info: info-recursive
 
 info-am:
 
@@ -2662,7 +2740,7 @@ install-data-am: install-completionSCRIPTS install-data-local \
 	install-pkgconfigDATA install-pkgdataDATA install-scriptsDATA \
 	install-scriptsSCRIPTS
 
-install-dvi: install-dvi-am
+install-dvi: install-dvi-recursive
 
 install-dvi-am:
 
@@ -2670,43 +2748,43 @@ install-exec-am: install-binPROGRAMS install-binSCRIPTS \
 	install-dist_sbinSCRIPTS install-libLTLIBRARIES \
 	install-sbinPROGRAMS install-sbinSCRIPTS
 
-install-html: install-html-am
+install-html: install-html-recursive
 
 install-html-am:
 
-install-info: install-info-am
+install-info: install-info-recursive
 
 install-info-am:
 
 install-man: install-man1 install-man8
 
-install-pdf: install-pdf-am
+install-pdf: install-pdf-recursive
 
 install-pdf-am:
 
-install-ps: install-ps-am
+install-ps: install-ps-recursive
 
 install-ps-am:
 
 installcheck-am:
 
-maintainer-clean: maintainer-clean-am
+maintainer-clean: maintainer-clean-recursive
 	-rm -f $(am__CONFIG_DISTCLEAN_FILES)
 	-rm -rf $(top_srcdir)/autom4te.cache
 	-rm -rf lib/$(DEPDIR) lib/lldp/$(DEPDIR) utilities/$(DEPDIR)
 	-rm -f Makefile
 maintainer-clean-am: distclean-am maintainer-clean-generic
 
-mostlyclean: mostlyclean-am
+mostlyclean: mostlyclean-recursive
 
 mostlyclean-am: mostlyclean-compile mostlyclean-generic \
 	mostlyclean-libtool
 
-pdf: pdf-am
+pdf: pdf-recursive
 
 pdf-am:
 
-ps: ps-am
+ps: ps-recursive
 
 ps-am:
 
@@ -2722,18 +2800,20 @@ uninstall-am: uninstall-binPROGRAMS uninstall-binSCRIPTS \
 
 uninstall-man: uninstall-man1 uninstall-man8
 
-.MAKE: all check check-am install install-am install-strip
+.MAKE: $(am__recursive_targets) all check check-am install install-am \
+	install-strip
 
-.PHONY: CTAGS GTAGS TAGS all all-am all-local am--refresh check \
-	check-am clean clean-binPROGRAMS clean-cscope clean-generic \
-	clean-libLTLIBRARIES clean-libtool clean-local \
-	clean-noinstPROGRAMS clean-sbinPROGRAMS cscope cscopelist-am \
-	ctags ctags-am dist dist-all dist-bzip2 dist-gzip dist-hook \
-	dist-lzip dist-shar dist-tarZ dist-xz dist-zip distcheck \
-	distclean distclean-compile distclean-generic distclean-hdr \
-	distclean-libtool distclean-tags distcleancheck distdir \
-	distuninstallcheck dvi dvi-am html html-am info info-am \
-	install install-am install-binPROGRAMS install-binSCRIPTS \
+.PHONY: $(am__recursive_targets) CTAGS GTAGS TAGS all all-am all-local \
+	am--refresh check check-am clean clean-binPROGRAMS \
+	clean-cscope clean-generic clean-libLTLIBRARIES clean-libtool \
+	clean-local clean-noinstPROGRAMS clean-sbinPROGRAMS cscope \
+	cscopelist-am ctags ctags-am dist dist-all dist-bzip2 \
+	dist-gzip dist-hook dist-lzip dist-shar dist-tarZ dist-xz \
+	dist-zip distcheck distclean distclean-compile \
+	distclean-generic distclean-hdr distclean-libtool \
+	distclean-tags distcleancheck distdir distuninstallcheck dvi \
+	dvi-am html html-am info info-am install install-am \
+	install-binPROGRAMS install-binSCRIPTS \
 	install-completionSCRIPTS install-data install-data-am \
 	install-data-local install-dist_pkgdataDATA \
 	install-dist_pkgdataSCRIPTS install-dist_sbinSCRIPTS \
@@ -2745,15 +2825,16 @@ uninstall-man: uninstall-man1 uninstall-man8
 	install-pkgconfigDATA install-pkgdataDATA install-ps \
 	install-ps-am install-sbinPROGRAMS install-sbinSCRIPTS \
 	install-scriptsDATA install-scriptsSCRIPTS install-strip \
-	installcheck installcheck-am installdirs maintainer-clean \
-	maintainer-clean-generic mostlyclean mostlyclean-compile \
-	mostlyclean-generic mostlyclean-libtool pdf pdf-am ps ps-am \
-	tags tags-am uninstall uninstall-am uninstall-binPROGRAMS \
-	uninstall-binSCRIPTS uninstall-completionSCRIPTS \
-	uninstall-dist_pkgdataDATA uninstall-dist_pkgdataSCRIPTS \
-	uninstall-dist_sbinSCRIPTS uninstall-dist_scriptsDATA \
-	uninstall-dist_scriptsSCRIPTS uninstall-libLTLIBRARIES \
-	uninstall-local uninstall-man uninstall-man1 uninstall-man8 \
+	installcheck installcheck-am installdirs installdirs-am \
+	maintainer-clean maintainer-clean-generic mostlyclean \
+	mostlyclean-compile mostlyclean-generic mostlyclean-libtool \
+	pdf pdf-am ps ps-am tags tags-am uninstall uninstall-am \
+	uninstall-binPROGRAMS uninstall-binSCRIPTS \
+	uninstall-completionSCRIPTS uninstall-dist_pkgdataDATA \
+	uninstall-dist_pkgdataSCRIPTS uninstall-dist_sbinSCRIPTS \
+	uninstall-dist_scriptsDATA uninstall-dist_scriptsSCRIPTS \
+	uninstall-libLTLIBRARIES uninstall-local uninstall-man \
+	uninstall-man1 uninstall-man8 \
 	uninstall-openvswitchincludeHEADERS uninstall-pkgconfigDATA \
 	uninstall-pkgdataDATA uninstall-sbinPROGRAMS \
 	uninstall-sbinSCRIPTS uninstall-scriptsDATA \
@@ -2927,320 +3008,6 @@ thread-safety-check:
 @HAVE_FLAKE8_TRUE@		flake8 $^ --ignore=E121,E123,E125,E126,E127,E128,E129,E131,W503,F811,D,H ${FLAKE8_FLAGS}; then \
 @HAVE_FLAKE8_TRUE@		touch $@; else exit 1; fi
 
-ovn/utilities/ovn-sbctl.8: \
-	ovn/utilities/ovn-sbctl.8.in \
-	lib/db-ctl-base.man \
-	lib/table.man \
-	ovsdb/remote-active.man \
-	ovsdb/remote-passive.man
-ovn/utilities/ovn-sbctl.8.in:
-lib/db-ctl-base.man:
-lib/table.man:
-ovsdb/remote-active.man:
-ovsdb/remote-passive.man:
-
-ovsdb/ovsdb-client.1: \
-	ovsdb/ovsdb-client.1.in \
-	lib/common-syn.man \
-	lib/common.man \
-	lib/daemon-syn.man \
-	lib/daemon.man \
-	lib/ssl-bootstrap-syn.man \
-	lib/ssl-bootstrap.man \
-	lib/ssl-syn.man \
-	lib/ssl.man \
-	lib/table.man \
-	lib/vlog-syn.man \
-	lib/vlog.man \
-	ovsdb/remote-active.man \
-	ovsdb/remote-passive.man
-ovsdb/ovsdb-client.1.in:
-lib/common-syn.man:
-lib/common.man:
-lib/daemon-syn.man:
-lib/daemon.man:
-lib/ssl-bootstrap-syn.man:
-lib/ssl-bootstrap.man:
-lib/ssl-syn.man:
-lib/ssl.man:
-lib/table.man:
-lib/vlog-syn.man:
-lib/vlog.man:
-ovsdb/remote-active.man:
-ovsdb/remote-passive.man:
-
-ovsdb/ovsdb-server.1: \
-	ovsdb/ovsdb-server.1.in \
-	lib/common-syn.man \
-	lib/common.man \
-	lib/coverage-unixctl.man \
-	lib/daemon-syn.man \
-	lib/daemon.man \
-	lib/memory-unixctl.man \
-	lib/service-syn.man \
-	lib/service.man \
-	lib/ssl-bootstrap-syn.man \
-	lib/ssl-bootstrap.man \
-	lib/ssl-peer-ca-cert-syn.man \
-	lib/ssl-peer-ca-cert.man \
-	lib/ssl-syn.man \
-	lib/ssl.man \
-	lib/unixctl-syn.man \
-	lib/unixctl.man \
-	lib/vlog-syn.man \
-	lib/vlog-unixctl.man \
-	lib/vlog.man \
-	ovsdb/remote-active.man \
-	ovsdb/remote-passive.man
-ovsdb/ovsdb-server.1.in:
-lib/common-syn.man:
-lib/common.man:
-lib/coverage-unixctl.man:
-lib/daemon-syn.man:
-lib/daemon.man:
-lib/memory-unixctl.man:
-lib/service-syn.man:
-lib/service.man:
-lib/ssl-bootstrap-syn.man:
-lib/ssl-bootstrap.man:
-lib/ssl-peer-ca-cert-syn.man:
-lib/ssl-peer-ca-cert.man:
-lib/ssl-syn.man:
-lib/ssl.man:
-lib/unixctl-syn.man:
-lib/unixctl.man:
-lib/vlog-syn.man:
-lib/vlog-unixctl.man:
-lib/vlog.man:
-ovsdb/remote-active.man:
-ovsdb/remote-passive.man:
-
-ovsdb/ovsdb-tool.1: \
-	ovsdb/ovsdb-tool.1.in \
-	lib/common-syn.man \
-	lib/common.man \
-	lib/vlog-syn.man \
-	lib/vlog.man
-ovsdb/ovsdb-tool.1.in:
-lib/common-syn.man:
-lib/common.man:
-lib/vlog-syn.man:
-lib/vlog.man:
-
-utilities/bugtool/ovs-bugtool.8: \
-	utilities/bugtool/ovs-bugtool.8.in
-utilities/bugtool/ovs-bugtool.8.in:
-
-utilities/ovs-appctl.8: \
-	utilities/ovs-appctl.8.in \
-	lib/common.man
-utilities/ovs-appctl.8.in:
-lib/common.man:
-
-utilities/ovs-dpctl-top.8: \
-	utilities/ovs-dpctl-top.8.in
-utilities/ovs-dpctl-top.8.in:
-
-utilities/ovs-dpctl.8: \
-	utilities/ovs-dpctl.8.in \
-	lib/common.man \
-	lib/dpctl.man \
-	lib/vlog.man
-utilities/ovs-dpctl.8.in:
-lib/common.man:
-lib/dpctl.man:
-lib/vlog.man:
-
-utilities/ovs-l3ping.8: \
-	utilities/ovs-l3ping.8.in \
-	lib/common-syn.man \
-	lib/common.man
-utilities/ovs-l3ping.8.in:
-lib/common-syn.man:
-lib/common.man:
-
-utilities/ovs-ofctl.8: \
-	utilities/ovs-ofctl.8.in \
-	lib/colors.man \
-	lib/common.man \
-	lib/daemon.man \
-	lib/ofp-version.man \
-	lib/ssl.man \
-	lib/unixctl.man \
-	lib/vconn-active.man \
-	lib/vlog.man
-utilities/ovs-ofctl.8.in:
-lib/colors.man:
-lib/common.man:
-lib/daemon.man:
-lib/ofp-version.man:
-lib/ssl.man:
-lib/unixctl.man:
-lib/vconn-active.man:
-lib/vlog.man:
-
-utilities/ovs-pcap.1: \
-	utilities/ovs-pcap.1.in \
-	lib/common-syn.man \
-	lib/common.man
-utilities/ovs-pcap.1.in:
-lib/common-syn.man:
-lib/common.man:
-
-utilities/ovs-pki.8: \
-	utilities/ovs-pki.8.in
-utilities/ovs-pki.8.in:
-
-utilities/ovs-tcpundump.1: \
-	utilities/ovs-tcpundump.1.in \
-	lib/common-syn.man \
-	lib/common.man
-utilities/ovs-tcpundump.1.in:
-lib/common-syn.man:
-lib/common.man:
-
-utilities/ovs-test.8: \
-	utilities/ovs-test.8.in \
-	lib/common-syn.man \
-	lib/common.man \
-	utilities/ovs-vlan-bugs.man
-utilities/ovs-test.8.in:
-lib/common-syn.man:
-lib/common.man:
-utilities/ovs-vlan-bugs.man:
-
-utilities/ovs-testcontroller.8: \
-	utilities/ovs-testcontroller.8.in \
-	lib/common.man \
-	lib/daemon.man \
-	lib/ofp-version.man \
-	lib/ssl-peer-ca-cert.man \
-	lib/ssl.man \
-	lib/unixctl.man \
-	lib/vconn-active.man \
-	lib/vconn-passive.man \
-	lib/vlog.man
-utilities/ovs-testcontroller.8.in:
-lib/common.man:
-lib/daemon.man:
-lib/ofp-version.man:
-lib/ssl-peer-ca-cert.man:
-lib/ssl.man:
-lib/unixctl.man:
-lib/vconn-active.man:
-lib/vconn-passive.man:
-lib/vlog.man:
-
-utilities/ovs-vlan-bug-workaround.8: \
-	utilities/ovs-vlan-bug-workaround.8.in \
-	lib/common.man \
-	utilities/ovs-vlan-bugs.man
-utilities/ovs-vlan-bug-workaround.8.in:
-lib/common.man:
-utilities/ovs-vlan-bugs.man:
-
-utilities/ovs-vlan-test.8: \
-	utilities/ovs-vlan-test.8.in \
-	lib/common-syn.man \
-	lib/common.man \
-	utilities/ovs-vlan-bugs.man
-utilities/ovs-vlan-test.8.in:
-lib/common-syn.man:
-lib/common.man:
-utilities/ovs-vlan-bugs.man:
-
-utilities/ovs-vsctl.8: \
-	utilities/ovs-vsctl.8.in \
-	lib/common.man \
-	lib/db-ctl-base.man \
-	lib/ssl-bootstrap.man \
-	lib/ssl-peer-ca-cert.man \
-	lib/ssl.man \
-	lib/table.man \
-	lib/vconn-active.man \
-	lib/vconn-passive.man \
-	lib/vlog.man \
-	ovsdb/remote-active.man \
-	ovsdb/remote-active.man \
-	ovsdb/remote-passive.man \
-	ovsdb/remote-passive.man
-utilities/ovs-vsctl.8.in:
-lib/common.man:
-lib/db-ctl-base.man:
-lib/ssl-bootstrap.man:
-lib/ssl-peer-ca-cert.man:
-lib/ssl.man:
-lib/table.man:
-lib/vconn-active.man:
-lib/vconn-passive.man:
-lib/vlog.man:
-ovsdb/remote-active.man:
-ovsdb/remote-active.man:
-ovsdb/remote-passive.man:
-ovsdb/remote-passive.man:
-
-vswitchd/ovs-vswitchd.8: \
-	vswitchd/ovs-vswitchd.8.in \
-	lib/common.man \
-	lib/coverage-unixctl.man \
-	lib/daemon.man \
-	lib/dpctl.man \
-	lib/memory-unixctl.man \
-	lib/service.man \
-	lib/ssl-bootstrap.man \
-	lib/ssl.man \
-	lib/unixctl.man \
-	lib/vlog-unixctl.man \
-	lib/vlog.man \
-	ofproto/ofproto-dpif-unixctl.man \
-	ofproto/ofproto-tnl-unixctl.man \
-	ofproto/ofproto-unixctl.man \
-	ovsdb/remote-active.man \
-	ovsdb/remote-passive.man
-vswitchd/ovs-vswitchd.8.in:
-lib/common.man:
-lib/coverage-unixctl.man:
-lib/daemon.man:
-lib/dpctl.man:
-lib/memory-unixctl.man:
-lib/service.man:
-lib/ssl-bootstrap.man:
-lib/ssl.man:
-lib/unixctl.man:
-lib/vlog-unixctl.man:
-lib/vlog.man:
-ofproto/ofproto-dpif-unixctl.man:
-ofproto/ofproto-tnl-unixctl.man:
-ofproto/ofproto-unixctl.man:
-ovsdb/remote-active.man:
-ovsdb/remote-passive.man:
-
-vtep/vtep-ctl.8: \
-	vtep/vtep-ctl.8.in \
-	lib/common.man \
-	lib/db-ctl-base.man \
-	lib/ssl-bootstrap.man \
-	lib/ssl-peer-ca-cert.man \
-	lib/ssl.man \
-	lib/table.man \
-	lib/vlog.man \
-	ovsdb/remote-active.man \
-	ovsdb/remote-active.man \
-	ovsdb/remote-passive.man \
-	ovsdb/remote-passive.man
-vtep/vtep-ctl.8.in:
-lib/common.man:
-lib/db-ctl-base.man:
-lib/ssl-bootstrap.man:
-lib/ssl-peer-ca-cert.man:
-lib/ssl.man:
-lib/table.man:
-lib/vlog.man:
-ovsdb/remote-active.man:
-ovsdb/remote-active.man:
-ovsdb/remote-passive.man:
-ovsdb/remote-passive.man:
-
 $(srcdir)/manpages.mk: $(MAN_ROOTS) build-aux/sodepends.pl
 	@$(PERL) $(srcdir)/build-aux/sodepends.pl -I. -I$(srcdir) $(MAN_ROOTS) >$(@F).tmp
 	@if cmp -s $(@F).tmp $@; then \
@@ -3277,8 +3044,13 @@ dist-docs:
 @HAVE_OPENSSL_TRUE@	 openssl dhparam -C -in $(srcdir)/lib/dh4096.pem -noout)	\
 @HAVE_OPENSSL_TRUE@	| sed 's/\(get_dh[0-9]*\)()/\1(void)/' > lib/dhparams.c.tmp &&  \
 @HAVE_OPENSSL_TRUE@	mv lib/dhparams.c.tmp lib/dhparams.c
-lib/vswitch-idl.ovsidl: vswitchd/vswitch.ovsschema lib/vswitch-idl.ann
-	$(AM_V_GEN)$(OVSDB_IDLC) annotate $(srcdir)/vswitchd/vswitch.ovsschema $(srcdir)/lib/vswitch-idl.ann > $@.tmp && mv $@.tmp $@
+
+# vswitch IDL
+#OVSIDL_BUILT += lib/vswitch-idl.c lib/vswitch-idl.h lib/vswitch-idl.ovsidl
+
+#EXTRA_DIST += lib/vswitch-idl.ann
+#lib/vswitch-idl.ovsidl: vswitchd/vswitch.ovsschema lib/vswitch-idl.ann
+#	$(AM_V_GEN)$(OVSDB_IDLC) annotate $(srcdir)/vswitchd/vswitch.ovsschema $(srcdir)/lib/vswitch-idl.ann > $@.tmp && mv $@.tmp $@
 
 lib/dirs.c: lib/dirs.c.in Makefile
 	$(AM_V_GEN)($(ro_c) && sed < $(srcdir)/lib/dirs.c.in \
@@ -3344,11 +3116,9 @@ utilities/ovs-lib: $(top_builddir)/config.status
 @HAVE_PYTHON_TRUE@	  rmdir "$(DESTDIR)$(bugtoolpluginsdir)/$$dir"; \
 @HAVE_PYTHON_TRUE@	done; exit 0
 
-# include/odp-netlink.h: datapath/linux/compat/include/linux/openvswitch.h \
-#                       build-aux/extract-odp-netlink-h
-#	$(AM_V_GEN)sed -f $(srcdir)/build-aux/extract-odp-netlink-h < $< > $@
-#EXTRA_DIST += build-aux/extract-odp-netlink-h
-#CLEANFILES += include/odp-netlink.h
+include/odp-netlink.h: datapath/linux/compat/include/linux/openvswitch.h \
+                       build-aux/extract-odp-netlink-h
+	$(AM_V_GEN)sed -f $(srcdir)/build-aux/extract-odp-netlink-h < $< > $@
 
 #include include/openflow/automake.mk
 #include include/sparse/automake.mk
